@@ -9,127 +9,334 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Первый блок -->
-    <section class="first-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Первый курс<br>по компьютерной сборке</h1>
-                    <div class="grid text-center">
-                    <div class="timer-container">
-                        <div class="row">
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Дней</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Часов</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Минут</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Секунд</div>
+<!--Navbar-->  
+    <div class="page"> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Bootstrap" width="40" height="40">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Курсы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Расписание</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Преподаватели</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Рассылка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <button data-mdb-ripple-init type="button" class="btn btn-primary me-3" style="
+                background: radial-gradient(circle, #C89AFC, #7C6AFA);
+                color: white;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 50px;
+                font-family: 'Roboto', sans-serif;
+                white-space: nowrap;
+                transition: transform 0.3s ease;
+                width: 183px;
+                height: 44px;"
+                >
+                Зайти в кабинет
+                </button>
+            </div>
+        </nav>
+        <!-- Первый блок -->
+        <section class="first-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Первый курс<br>по компьютерной сборке</h1>
+                        <div class="grid text-center">
+                        <div class="timer-container">
+                            <div class="row">
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Дней</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Часов</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Минут</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Секунд</div>
+                                </div>
                             </div>
                         </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="order-block">
+        <div class="container">
+            <!-- Единый ряд для всех элементов -->
+            <div class="row align-items-center">
+                <!-- Колонка для кнопки -->
+                <div class="col-auto pe-5">
+                    <button class="btn btn-order">Заказать курс</button>
+                </div>
+
+                <!-- Колонка для статистики -->
+                <div class="col">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="stats-group">
+                                <div class="stats-item">
+                                    <div class="stats-label">Учеников всего: 200</div>
+                                </div>
+                                <div class="stats-item mt-4">
+                                    <div class="stats-label">Успешно закончили курс: 190</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="stats-item">
+                                <div class="stats-label">Заработано учениками: 400 000₽</div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                </div>
+                                <div class="progress-labels d-flex justify-content-between mt-2">
+                                    <span>0</span>
+                                    <span>1 000 000₽</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Блок с заказом курса -->
-    <section class="order-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center mb-4">
-                    <a class="btn btn-primary" href="#" role="button" style="background: radial-gradient(circle, #DF5950, #451046);">Заказать курс</a>
-                </div>
-                <div class="col-md-4 text-start">
-                    <div class="stats-item">
-                        <p class="text-start">Учеников всего: 200</p>
-                    </div>
-                    <div class="stats-item">
-                            <p class="text-start">Успешно закончили курс: 100</p>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="stats-item">
-                        <div class="stats-label">Заработано учениками: 400 000₽</div>
-                        <div class="progress mt-2">
-                            <div class="progress-bar" style="width: 40%"></div>
-                        </div>
-                        <div class="progress-labels d-flex justify-content-between">
-                            <span>0</span>
-                            <span>1 000 000₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Чем мы занимаемся -->
     <section class="about-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="images/pc-build.jpg" alt="Сборка ПК" class="img-fluid">
+                    <img src="about__img.png" alt="Сборка ПК" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <h2>Чем мы занимаемся?</h2>
+                    <h1>Чем мы занимаемся?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dicium vestibulum mi et sed nunc, orci fermentum vestibulum, nonis. E nascus, adipiscing sapien sem senescus praesent aenean consequat. Aenean facilisit turpis aliquet ringilla. Nam sem felis sed interdum feugiat matte elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placeeu nisi, lobortis.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Быстрый старт -->
     <section class="fast-start">
         <div class="container">
-            <h2 class="text-start mb-4">Быстрый старт</h2>
-            <p class="text-start  mb-5">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер.</p>
+            <h1 rel="home" ><img src="start.png"/><span class="text-center">Быстрый старт</span></h1>
+            <p class="text-start mb-5">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер.</p>
+            
+            <!-- Добавленные слитые квадратные блоки с градиентом и подписями -->
+            <div class="merged-blocks-container mb-5">
+                <div class="row-merged-squares">
+                    <div class="col-md-3 p-0 position-relative">
+                        <div class="block-label">100%</div>
+                        <div class="merged-block1">
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 position-relative">
+                        <div class="block-label">75%</div>
+                        <div class="merged-block2">
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 position-relative">
+                        <div class="block-label">50%</div>
+                        <div class="merged-block3">
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 position-relative">
+                        <div class="block-label">Итог</div>
+                        <div class="merged-block4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pad1"></div>
+            <div class="pad2"></div>
             
             <div class="row text-center percentages">
-                <div class="square-progress w-100" style="height: 100%;">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                </div>
-                
                 <div class="col-md-3">
-                    <div class="percent-circle">100%</div>
-                    
-                </div>
-                
+                </div> 
                 <div class="col-md-3">
-                    <div class="percent-circle">75%</div>
                 </div>
                 <div class="col-md-3">
-                    <div class="percent-circle">50%</div>
                 </div>
                 <div class="col-md-3">
-                    <div class="percent-circle">Итог</div>
                 </div>
             </div>
             
             <div class="row mt-5">
-                <div class="col-md-3">
+                <div class="col-md-3" style="color: white;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="color: white;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="color: white;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="color: white;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
                 </div>
             </div>
         </div>
+        <style>
+    .row-merged-squares {
+        margin-bottom: 50px;
+    }
+    
+    .merged-squares {
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .row-merged-squares {
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+        
+        
+        
+        /* Соединительная линия */
+        .row-merged-squares::after {
+          content: '';
+          position: absolute;
+          left: 200px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 2px;
+        }
+      
+    
+    .merged-block1 {
+        height: 100px;
+        background: radial-gradient(circle, #C89AFC, #7C6AFA);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        position: relative;
+        transition: all 0.3s ease;
+        margin-top: 50px; /* Отступ для подписи */
+    }
+    
+    .merged-block2 {
+        height: 75px;
+        background: radial-gradient(circle, #C89AFC, #7C6AFA);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        position: relative;
+        transition: all 0.3s ease;
+        margin-top: 50px; /* Отступ для подписи */
+    }
+    .merged-block3 {
+        height: 50px;
+        background: radial-gradient(circle, #C89AFC, #7C6AFA);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        position: relative;
+        transition: all 0.3s ease;
+        margin-top: 50px; /* Отступ для подписи */
+    }
+    
+    .merged-block4 {
+        height: 10px;
+        background: radial-gradient(circle, #C89AFC, #7C6AFA);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        position: relative;
+        transition: all 0.3s ease;
+        margin-top: 50px; /* Отступ для подписи */
+    }
+
+    /* Стили для подписей над блоками */
+    .block-label {
+        top: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        z-index: 3;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 3px 10px;
+        border-radius: 15px;
+        white-space: nowrap;
+    }
+    
+    /* Эффект разделения между блоками */
+    .merged-block:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 60%;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+    @media (max-width: 767px) {
+        .merged-block {
+            height: 80px;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        
+        .block-label {
+            font-size: 14px;
+        }
+    }
+
+        </style>
     </section>
 
     <!-- Получите профессию -->
@@ -140,21 +347,21 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
-                        <i class="fas fa-laptop-code "></i>
+                        <img src="icon-1.png" alt="icon1">
                         <h3>Только практические навыки в работе</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
-                        <i class="fas fa-desktop"></i>
+                        <img src="icon-2.png" alt="icon2">
                         <h3>Работа на самом современном оборудовании</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
-                        <i class="fas fa-certificate"></i>
+                        <img src="icon-3.png" alt="icon3">
                         <h3>Сертификация по окончании обучения</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
@@ -164,11 +371,11 @@
     </section>
 
     <!-- Партнеры -->
-       <!-- Партнеры -->
+       <!-- <Партнеры> -->
        <section class="partners">
         <div class="container">
-            <p class="fs-1"><h2 class="text-start mb-5">Партнеры - топовые бренды</h2></p>
-            <div class="row">
+            <p class="fs-1"><h2 rel="home" ><img src="partners.png"/><span> Партнеры - топовые бренды</span></h2>
+            <div class="row align-items-center">
                 <div class="col-3 text-center p-4">
                     <img src="msi.png" alt="MSI" class="img-fluid">
                 </div>
@@ -179,7 +386,7 @@
                     <img src="radeon.png" alt="MSI" class="img-fluid">
                 </div>
                 <div class="col-3 text-center p-4">
-                    <img src="amd2.png" alt="MSI" class="img-fluid" style="width: 250px; height: 250px;">
+                    <img src="amd2.png" alt="MSI" class="img-fluid">
                 </div>
                 <div class="col-3 text-center p-4">
                     <img src="intel.png" alt="MSI" class="img-fluid">
@@ -191,21 +398,89 @@
                     <img src="king.png" alt="MSI" class="img-fluid">
                 </div>
                 <div class="col-3 text-center p-4">
-                    <img src="logitlog.png" alt="MSI" class="img-fluid" style="height: 125px; height: 125px;">
+                    <img src="logitlog.png" alt="MSI" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Новый пустой блок -->
-    <section class="empty-block">
-        <div class="container">
-            <h2 class="text-center mb-5">Программа обучения</h2>
-            <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-                <div class="progress-bar" style="width: 100%"></div>
-              </div>
+    <!-- прогрессбар -->
+    <section style="background-color: #000000;">
+        <div class="text-center" >
+            <img class="mb-5" src="timeline.png">
         </div>
-    </section>
+        
+        <h1 class="text-center mb-5" >Программа обучения </h1>
+        <p class="text-center" style="color: #696969;">Больше 90% учеников прошли полный курс и смогли</p>
+        <p class="text-center" style="color: #696969;">собрать свой первый компьютер.</p>
+        <div class="container py-5">
+          <div class="main-timeline">
+            <div class="timeline left">
+              <div class="card-tl">
+                <div class="card-body p-4 text-end">
+                  <h5>Неделя №1</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline right">
+              <div class="card-tl">
+                <div class="card-body p-4">
+                  <h5>Неделя №2</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline left">
+              <div class="card-tl">
+                <div class="card-body p-4 text-end">
+                  <h5>Неделя №3</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline right">
+              <div class="card-tl">
+                <div class="card-body p-4">
+                  <h5>Неделя №4</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline left">
+              <div class="card-tl">
+                <div class="card-body p-4 text-end">
+                  <h5>Неделя №5</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline right">
+              <div class="card-tl">
+                <div class="card-body p-4">
+                  <h5>Неделя №6</h5>
+                  <p class="mb-0">Красивая часть курса,
+                    которая помогает в успехе</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline left">
+                <div class="card-tl">
+                  <div class="card-body p-4 text-end">
+                    <h5>Неделя №7</h5>
+                    <p class="mb-0">Красивая часть курса,
+                        которая помогает в успехе</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Преподаватели -->
     <section class="teachers">
