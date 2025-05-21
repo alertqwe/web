@@ -22,22 +22,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    <a class="nav-link active" aria-current="page" href="#glavn">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Курсы</a>
+                    <a class="nav-link active" aria-current="page" href="#kyrs">Курсы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Расписание</a>
+                    <a class="nav-link active" aria-current="page" href="#rasp">Расписание</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Преподаватели</a>
+                    <a class="nav-link active" aria-current="page" href="#prepd">Преподаватели</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Рассылка</a>
+                    <a class="nav-link active" aria-current="page" href="#rassil">Рассылка</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                    <a class="nav-link active" aria-current="page" href="#konta">Контакты</a>
                 </li>
                 </ul>
             </div>
@@ -52,13 +52,15 @@
                 white-space: nowrap;
                 transition: transform 0.3s ease;
                 width: 183px;
-                height: 44px;"
+                height: 44px;
+                "
                 >
                 Зайти в кабинет
                 </button>
             </div>
         </nav>
         <!-- Первый блок -->
+         <a id="glavn"></a>
         <section class="first-block">
             <div class="container">
                 <div class="row">
@@ -106,15 +108,17 @@
                         <div class="col-md-5">
                             <div class="stats-group">
                                 <div class="stats-item">
-                                    <div class="stats-label">Учеников всего: 200</div>
+                                    <span class="stats-label me-5">Учеников всего:</span>
+                                        <span style="color: white;" class="stats-label">200</span>
                                 </div>
                                 <div class="stats-item mt-4">
-                                    <div class="stats-label">Успешно закончили курс: 190</div>
+                                     <span class="stats-label me-5">Успешно закончили курс:</span>
+                                        <span style="color: white;" class=" stats-label  ">190</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <div class="stats-item">
                                 <div class="stats-label">Заработано учениками: 400 000₽</div>
                                 <div class="progress mt-3">
@@ -150,10 +154,12 @@
     </section>
     
     <!-- Быстрый старт -->
+     <a id="kyrs"></a>
     <section class="fast-start">
         <div class="container">
-            <h1 rel="home" ><img src="start.png"/><span class="text-center">Быстрый старт</span></h1>
-            <p class="text-start mb-5" style="color: #e4e4e4;">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер.</p>
+            <h1 class="mb-5" rel="home" ><img class="me-5" src="start.png"/><span class="text-center">Быстрый старт</span></h1>
+            <p class="text-start" style="color: #686868;">Больше 90% учеников прошли полный курс и смогли</p>
+            <p class="text-start mb-5" style="color: #686868;">собрать свой первый компьютер.</p>
             
             <!-- Добавленные слитые квадратные блоки с градиентом и подписями -->
             <div class="merged-blocks-container mb-5">
@@ -331,9 +337,6 @@
             margin-top: 25px;
         }
         
-        .block-label {
-            font-size: 14px;
-        }
     }
 
         </style>
@@ -374,7 +377,7 @@
        <!-- <Партнеры> -->
        <section class="partners">
         <div class="container">
-            <p class="fs-1"><h2 rel="home" ><img src="partners.png"/><span> Партнеры - топовые бренды</span></h2>
+            <p class="fs-1"><h2 rel="home" ><img class="me-4" src="partners.png"/><span class="partners"> Партнеры - топовые бренды</span></h2>
             <div class="row align-items-center">
                 <div class="col-3 text-center p-4">
                     <img src="msi.png" alt="MSI" class="img-fluid">
@@ -405,6 +408,7 @@
     </section>
 
     <!-- прогрессбар -->
+     <a id="rasp"></a>
     <section style="background-color: #000000;">
         <div class="text-center" >
             <img class="mb-5" src="timeline.png">
@@ -483,10 +487,18 @@
       </section>
 
     <!-- Преподаватели -->
+     <a id="prepd"></a>
     <section class="teachers">
         <div class="container">
-            <h2 class="text-center mb-5">Ваши преподаватели</h2>
-            
+            <div class="row align-items-center mb-5">
+                <div class="col-auto"> 
+                    <img src="teach.png" >
+                </div>
+                <div class="col"> 
+                    <h2 class="prepodi m-0">Ваши преподаватели</h2>
+                </div>
+            </div>
+    
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="teacher-card">
@@ -516,6 +528,7 @@
         </div>
     </section>
     <!-- Подписка -->
+     <a id="rassil"></a>
     <section class="subscribe">
         <div class="container">
             <div class="row justify-content-center">
@@ -533,12 +546,13 @@
     </section>
 
     <footer class="footer">
+        <a id="konta"></a>
         <div class="container text-center py-4">
-            <div class="social-icons mb-3">
-                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <div class="soc d-flex justify-content-center">
+                <img src="vk.png" alt="">
+                <img src="youtube.png" alt="">
+                <img src="facebook.png" alt="">
+                <img src="inst.png" alt="">
             </div>
         </div>
     </footer>
